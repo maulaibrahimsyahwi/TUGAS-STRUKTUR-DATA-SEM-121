@@ -8,6 +8,8 @@
 body {
   font-family: "Nunito", sans-serif;
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
   margin: 50px auto;
   box-sizing: border-box;
@@ -130,4 +132,9 @@ button {
   font-family: "Nunito";
   color: #16423c;
   font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: -10px;
 }
