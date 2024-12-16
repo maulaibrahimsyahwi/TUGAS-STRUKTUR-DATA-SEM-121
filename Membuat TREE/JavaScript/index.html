@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Tree</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <h1>INTERACTIVE TREE</h1>
+        <div class="line">
+          <label for="operation">OPERATION</label>
+        </div>
+        <select id="operation">
+          <option value="setRoot" class="selected-option">Set Root Node</option>
+          <option value="addNode" class="selected-option">Add Node</option>
+          <option value="removeNode" class="selected-option">
+            Remove Node
+          </option>
+        </select>
+        <input type="text" id="input1" placeholder="Value 1" />
+        <input
+          type="text"
+          id="input2"
+          placeholder="Value 2"
+          style="display: none"
+        />
+        <button onclick="performOperation()" class="btn">Execute</button>
+        <button onclick="resetTree()">Reset Tree</button>
+      </div>
+      <div class="result">
+        <h2>Tree Structure</h2>
+        <div class="tree-container">
+          <p id="tree">Tree is empty.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
